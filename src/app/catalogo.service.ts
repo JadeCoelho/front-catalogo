@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, catchError, map } from 'rxjs';
 import { Catalogo } from './catalogo';
 import { HttpClient } from '@angular/common/http';
-// import { environment } from './environments/environment';
+import { environment } from './environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +11,8 @@ export class CatalogoService {
 
   // url = 'http://localhost:8000/catalogos'
 
-  // apiUrl = environment.apiUrl;
-  apiUrl = 'https://back-catalogo-190cknd2n-jadecoelhos-projects.vercel.app/'
+  apiUrl = environment.apiUrl;
+  // apiUrl = 'https://back-catalogo-190cknd2n-jadecoelhos-projects.vercel.app/'
 
   constructor(private http: HttpClient){}
 
