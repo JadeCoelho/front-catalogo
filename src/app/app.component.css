@@ -1,0 +1,156 @@
+h3 {
+  color: #134a9d;
+  font-size: 22px;
+  font-weight: 800;
+  padding: 0.5rem 0;
+}
+
+h3 span {
+  color: #a4a4a4;
+  font-size: 18px;
+}
+
+.filtro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 1.5rem 0;
+}
+
+.filtro li {
+  border: 1.5px solid #458fd6;
+  color: #458fd6;
+  padding: 9px;
+  font-size: 14.5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+  text-transform: capitalize;
+}
+
+.filtro li:hover,
+.filtro li.ativo {
+  background-color: #458fd6;
+  color: #fff;
+}
+
+.catalogos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  row-gap: 1.5rem;
+}
+
+.catalogo {
+  width: 320px;
+  height: 210px;
+  background-color: #ddeaff70;
+  padding: 35px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #00000038;
+}
+
+.catalogo .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+
+.catalogo a {
+  cursor: pointer;
+  background-color: #134a9d;
+  width: 100%;
+  color: #fff;
+  padding: 7px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.catalogo a:hover {
+  filter: brightness(130%);
+}
+
+
+.pag {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.pag button {
+  border: none;
+  padding: 8px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  background-color: #458fd6;
+  color: #fff;
+}
+
+.pag button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.pag button:enabled:hover {
+  filter: brightness(115%);
+}
+
+
+.pag button i {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 1.5rem;
+  }
+  h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  h3 span {
+    font-size: 15px;
+  }
+
+  .filtro {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .filtro li {
+    font-size: 12.5px;
+  }
+
+  .catalogos {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .catalogo {
+    width: 260px;
+    height: 190px;
+    padding: 20px 10px;
+  }
+
+  .pag button {
+    padding: 7px;
+    margin: 0 0.3rem;
+  }
+
+  .pag button i {
+    font-size: 17px;
+  }
+}

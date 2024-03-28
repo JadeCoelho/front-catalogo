@@ -1,0 +1,43 @@
+.logo img {
+  width: 100px;
+}
+
+header {
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ddeaff70;
+  margin-bottom: 1.5rem;
+  height: 150px;
+}
+
+.midias i {
+  cursor: pointer;
+  background-color: #2671d3;
+  color: #fff;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: background-color 0.3s ease;
+  margin: 0 0.15rem;
+}
+
+.midias a:hover i {
+  background-color: #134a9d;
+}
+
+@media screen and (max-width: 600px) {
+  .logo img {
+    width: 70px;
+  }
+  header {
+    padding: 2rem 1.5rem;
+    height: 100px;
+  }
+
+  .midias i {
+    padding: 7px;
+    font-size: 17px;
+  }
+}
