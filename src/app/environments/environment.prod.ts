@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://back-catalogo.vercel.app/catalogos'
+  apiUrl: 'back-catalogo-190cknd2n-jadecoelhos-projects.vercel.app'
 };
