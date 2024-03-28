@@ -12,7 +12,7 @@ export class CatalogoService {
   // url = 'http://localhost:8000/catalogos'
 
   // apiUrl = environment.apiUrl;
-  apiUrl = 'https://back-catalogo-git-main-jadecoelhos-projects.vercel.app'
+  apiUrl = 'back-catalogo-190cknd2n-jadecoelhos-projects.vercel.app'
 
   constructor(private http: HttpClient){}
 
